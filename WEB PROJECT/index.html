@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS dosyası bağlantısı -->
+
+    
+    <style>
+        /* Ek stil tanımlamaları */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .restaurant-name h1 {
+            margin: 0;
+        }
+        
+        #home {
+            position: relative;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        /* Slideshow konteyneri */
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px; /* Genişliği isteğe göre ayarlayabilirsiniz */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Resimlerin stili */
+.slideshow-container img {
+    width: 80%; /* Resimler konteynerin yarısını kaplar */
+    height: auto;
+    object-fit: cover;
+    filter: blur(2px); /* Bulanıklaştırma efekti */
+    transition: filter 0.5s;
+}
+
+
+
+        
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .gallery-container img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-container img:hover {
+            transform: scale(1.1);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes slide-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="restaurant-name">
+            <h1>Gourmet Haven</h1> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#about">About Us</a></li> 
+                <li><a href="menu.html">Menu</a></li> 
+                <li><a href="#gallery">Gallery</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+                <li><a href="#reservation">Reservation</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana içerik bölümü -->
+
+    <section id="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/dish1.jpeg" alt="Dish 1"> <!-- Slideshow için resimler -->
+            </div>
+            <div class="mySlides fade">
+                <img src="images/dish2.jpeg" alt="Dish 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/dish3.jpeg" alt="Dish 3">
+            </div>
+            <div class="caption">
+                <h1>Welcome to Gourmet Haven</h1> 
+                <h2>Experience the Taste of Excellence</h2> 
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Gourmet Haven, where culinary excellence meets a warm and inviting atmosphere. Established in 1998, we have been dedicated to providing an exceptional dining experience to our guests. Our team of world-class chefs uses only the freshest ingredients to craft exquisite dishes that tantalize your taste buds.</p>
+                    <p>At Gourmet Haven, we believe in the art of fine dining. Our menu features a diverse selection of cuisines, from classic favorites to innovative creations, ensuring that there is something to delight every palate. Our commitment to quality extends beyond the kitchen, as we strive to provide impeccable service and an ambiance that makes you feel at home.</p>
+                    <p>Whether you're here for a romantic dinner, a family celebration, or a business meeting, Gourmet Haven is the perfect destination. We invite you to join us and experience the taste of excellence.</p>
+                </div>
+                <div class="about-images">
+                    <img src="images/chef.jpg" alt="Chef">
+                    <img src="images/dining_area.jpg" alt="Dining Area">
+                    <img src="images/dish_presentation.jpg" alt="Dish Presentation">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/dish1.jpeg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish2.jpeg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish3.jpeg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish4.jpeg" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish5.jpeg" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dish6.jpeg" alt="Gallery Image 6">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Haven Street, Food City, Country</p>
+                    <p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@gourmethaven.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <div class="reservation-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" required min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Reservation Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Reservation Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <button type="submit">Reserve Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- <footer>
+        <p>&copy; 2024 Gourmet Haven. All rights reserved.</p> 
+    </footer> -->
+
+    <script src="index.js"></script> 
+   
+</body>
+</html>

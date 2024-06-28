@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Menu</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS dosyası bağlantısı -->
+    <style>
+        /* Stil eklemeleri */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center; /* Menü içeriğini merkezlemek için */
+        }
+        .menu-categories {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu-categories a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-style: italic;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .menu-categories a:hover {
+            background-color: #555;
+        }
+        .menu-categories a.active {
+            background-color: #333;
+            color: #fff;
+        }
+        .menu-content {
+            text-align: left;
+        }
+        .menu-category {
+            display: none; 
+            margin-top: 20px;
+        }
+        .menu-category.active {
+            display: block; 
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu-item img {
+            max-width: 150px;
+            max-height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .menu-item-details {
+            flex: 1;
+        }
+        .menu-item h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .menu-item p {
+            margin: 0;
+            color: #666;
+        }
+        .menu-item p.price {
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="restaurant-name">
+            <h1>Gourmet Haven</h1> <!-- Restoran adı -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="index.html#about">About Us</a></li> 
+                <li><a href="menu.html" class="active">Menu</a></li> 
+                <li><a href="index.html#gallery">Gallery</a></li> 
+                <li><a href="index.html#contact">Contact</a></li> 
+                <li><a href="index.html#reservation">Reservation</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana içerik bölümü -->
+
+    <div class="menu-container">
+        <h2>Menu</h2> <!-- Menü başlığı -->
+        <p>Explore our diverse menu featuring a wide range of delicious dishes.</p> <!-- Menü açıklaması -->
+
+        <!-- Menü kategorileri için bağlantılar -->
+        <div class="menu-categories">
+            <a href="#appetizers" class="menu-link active">Appetizers</a> 
+            <a href="#main-courses" class="menu-link">Main Courses</a> 
+            <a href="#desserts" class="menu-link">Desserts</a> 
+            <a href="#beverages" class="menu-link">Beverages</a> 
+        </div>
+
+        <!-- Başlangıçlar (Appetizers) -->
+        <div id="appetizers" class="menu-category active">
+            <h3>Appetizers</h3> <!-- Başlangıçlar başlığı -->
+            <div class="menu-item">
+                <img src="images/appetizer1.jpg" alt="Appetizer 1"> 
+                <div class="menu-item-details">
+                    <h3>Humus</h3> <!-- Başlangıç adı -->
+                    <p>Chickpea puree, tahini, garlic, lemon juice, olive oil</p> 
+                    <p class="price">$10</p> <!-- Başlangıç fiyatı -->
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/appetizer2.jpg" alt="Appetizer 2"> 
+                <div class="menu-item-details">
+                    <h3>Baba Ghanoush</h3> 
+                    <p>Smoky eggplant, tahini, garlic, lemon juice, olive oil</p> 
+                    <p class="price">$12</p> 
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/appetizer3.jpg" alt="Appetizer 3"> 
+                <div class="menu-item-details">
+                    <h3>Falafel</h3> 
+                    <p>Fried chickpea balls, herbs, spices, tahini sauce</p> 
+                    <p class="price">$15</p> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Ana Yemekler (Main Courses) -->
+        <div id="main-courses" class="menu-category">
+            <h3>Main Courses</h3>
+            <div class="menu-item">
+                <img src="images/maincourse1.jpg" alt="Main Course 1">
+                <div class="menu-item-details">
+                    <h3>Grilled Salmon</h3> 
+                    <p>Grilled salmon fillet, lemon butter sauce, seasonal vegetables</p> 
+                    <p class="price">$20</p> 
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/maincourse2.jpg" alt="Main Course 2"> 
+                <div class="menu-item-details">
+                    <h3>Ribeye Steak</h3> 
+                    <p>Grilled ribeye steak, mashed potatoes, red wine sauce</p> 
+                    <p class="price">$25</p> 
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/maincourse3.jpg" alt="Main Course 3"> 
+                <div class="menu-item-details">
+                    <h3>Vegetable Risotto</h3> <!-- Ana Yemek adı -->
+                    <p>Arborio rice, mixed vegetables, parmesan cheese, white wine sauce</p> <!-- Ana Yemek açıklaması -->
+                    <p class="price">$18</p> <!-- Ana Yemek fiyatı -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Tatlılar (Desserts) -->
+        <div id="desserts" class="menu-category">
+            <h3>Desserts</h3> <!-- Tatlılar başlığı -->
+            <div class="menu-item">
+                <img src="images/dessert1.jpg" alt="Dessert 1"> 
+                <div class="menu-item-details">
+                    <h3>Tiramisu</h3> <!-- Tatlı adı -->
+                    <p>Coffee-flavored Italian dessert made with mascarpone cheese, cocoa, ladyfingers</p> 
+                    <p class="price">$8</p> 
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/dessert2.jpg" alt="Dessert 2"> 
+                <div class="menu-item-details">
+                    <h3>Chocolate Lava Cake</h3> <!-- Tatlı adı -->
+                    <p>Warm chocolate cake with a gooey molten center, served with vanilla ice cream</p> 
+                    <p class="price">$10</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/dessert3.jpg" alt="Dessert 3"> 
+                <div class="menu-item-details">
+                    <h3>Crème Brûlée</h3> <!-- Tatlı adı -->
+                    <p>Custard topped with caramelized sugar, served chilled</p> 
+                    <p class="price">$12</p> 
+                </div>
+            </div>
+        </div>
+
+        <!-- İçecekler (Beverages) -->
+        <div id="beverages" class="menu-category">
+            <h3>Beverages</h3> <!-- İçecekler başlığı -->
+            <div class="menu-item">
+                <img src="images/beverage1.jpg" alt="Beverage 1"> <!-- İçecekler için resim -->
+                <div class="menu-item-details">
+                    <h3>Classic Mojito</h3> <!-- İçecek adı -->
+                    <p>Fresh lime, mint, sugar, soda water, and white rum</p> <!-- İçecek açıklaması -->
+                    <p class="price">$5</p> <!-- İçecek fiyatı -->
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/beverage2.jpg" alt="Beverage 2"> <!-- İçecekler için resim -->
+                <div class="menu-item-details">
+                    <h3>Espresso</h3> <!-- İçecek adı -->
+                    <p>Strong black coffee brewed by forcing hot water under pressure</p> <!-- İçecek açıklaması -->
+                    <p class="price">$3</p> <!-- İçecek fiyatı -->
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/beverage3.jpg" alt="Beverage 3"> <!-- İçecekler için resim -->
+                <div class="menu-item-details">
+                    <h3>Fresh Orange Juice</h3> <!-- İçecek adı -->
+                    <p>Freshly squeezed oranges</p> <!-- İçecek açıklaması -->
+                    <p class="price">$4</p> <!-- İçecek fiyatı -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer (Alt kısım) -->
+    <!-- <footer>
+        <p>&copy; 2024 Gourmet Haven. All rights reserved.</p> 
+    </footer> -->
+
+    <script src="index.js"></script> <!-- JavaScript dosyası bağlantısı -->
+
+</body>
+</html>
